@@ -54,3 +54,11 @@ select{
     border-radius: 5px;
     font-size: 16px;
 }
+
+#participantFields{
+    font-size: 20px;
+}
+
+#teacherFields{
+    font-size: 20px;
+}
