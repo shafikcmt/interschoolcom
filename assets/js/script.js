@@ -14,9 +14,10 @@ function generateInputs() {
 
         var name = document.createElement("input");
         name.type = "text";
-        name.name = "participant_" + i;
-        name.id = "participant_" + i;
+        name.name = "participant_" + i + "_name";
+        name.id = "participant_" + i + "_name";
         name.placeholder = " Name";
+        name.class="form-control";
         name.required = true;
 
         var clas = document.createElement("input");
@@ -24,6 +25,7 @@ function generateInputs() {
         clas.name = "participant_" + i + "_class";
         clas.id = "participant_" + i + "_class";
         clas.placeholder = " Class";
+        clas.class="form-control";
         clas.required = true;
 
         var roll = document.createElement("input");
@@ -31,6 +33,7 @@ function generateInputs() {
         roll.name = "participant_" + i + "_roll";
         roll.id = "participant_" + i + "_roll";
         roll.placeholder = " Roll Number";
+        roll.class="form-control";
         roll.required = true;
 
         var contact = document.createElement("input");
@@ -38,6 +41,7 @@ function generateInputs() {
         contact.name = "participant_" + i + "_contact";
         contact.id = "participant_" + i + "_contact";
         contact.placeholder = " Contact Number";
+        contact.class="form-control";
         contact.required = true;
 
         participantFields.appendChild(document.createTextNode("Participant " + i + ": "));
@@ -53,9 +57,10 @@ function generateInputs() {
 
         var name = document.createElement("input");
         name.type = "text";
-        name.name = "teacher_" + i;
-        name.id = "teacher_" + i;
+        name.name = "teacher_" + i + "_name";
+        name.id = "teacher_" + i + "_name";
         name.placeholder = " Name";
+        name.class="form-control";
         name.required = true;
 
         var contact = document.createElement("input");
@@ -63,6 +68,7 @@ function generateInputs() {
         contact.name = "teacher_" + i + "_contact";
         contact.id = "teacher_" + i + "_contact";
         contact.placeholder = " Contact Number";
+        contact.class="form-control";
         contact.required = true;
 
         var email = document.createElement("input");
@@ -70,6 +76,7 @@ function generateInputs() {
         email.name = "teacher_" + i + "_email";
         email.id = "teacher_" + i + "_email";
         email.placeholder = " Email ID";
+        email.class="form-control";
         email.required = true;
 
         teacherFields.appendChild(document.createTextNode("Teacher " + i + ": "));
