@@ -21,7 +21,7 @@
 
         <br><br>
 
-        <form action="register.php" method="post">
+        <form action="" method="post">
 
             <label for="school_name">School Name: </label><br>
             <input type="text" name="school_name" id="school_name" required>
@@ -35,12 +35,22 @@
             <input type="text" name="city" id="city" required>
             <br><br>
 
-            <label for="contact_number">Contact Number:</label><br>
+            <label for="contact_number">Contact Number: </label><br>
             <input type="tel" name="contact_number" id="contact_number" required>
             <br><br>
 
             <label for="email">Email Address: </label><br>
             <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+
+            <label for="event_type">Participating Event: </label>
+            <select name="event_type" id="event_type" required onchange="generateInputs()">
+                <option value="default" selected>---</option>
+                <option value="1">Dancing</option>
+                <option value="2">Singing</option>
+                <option value="3">Declamation</option>
+            </select>
             <br>
             <br>
 
