@@ -9,7 +9,7 @@ include 'config.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judges Panel - Interschool</title>
-    <link rel="stylesheet" href="assets/css/judge_style.css">
+    <link rel="stylesheet" href="./assets/css/judge_style.css">
 </head>
 <body>
     <div class="buttons">

@@ -58,7 +58,7 @@ $read1 = $db->select($query1);
 
             </select>
             <h2>Enter the marks in given inputs:</h2>
-            <p style="font-size: 20px;">(The value must be less than or equal to 20)</p>
+            <p style="font-size: 1rem;">(The value must be less than or equal to 20)</p>
             <label for="stage_presence">Stage Presence</label><br>
             <input type="number" id="stage_presence" name="stage_presence" required max="20"><br><br>
             <label for="face_expression">Face Expression</label><br>

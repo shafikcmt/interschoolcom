@@ -26,8 +26,25 @@ $s = $db->select($q2);
     <title>Interschool - Leaderboard</title>
     <link rel="shortcut icon" href="./assets/images/clipboard.svg" type="image/x-icon">
     <style>
-        table{
-            margin:10px;
+        h1{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media screen and (max-width = 600px) {
+            .dcLeaderboard {
+                width: 100%;
+            }
+            .dLeaderboard {
+                width: 100%;
+            }
+            .sLeaderboard {
+                width: 100%;
+            }
+            center{
+                width: 100%;
+            }
+
         }
     </style>
 </head>
@@ -35,7 +52,7 @@ $s = $db->select($q2);
 
 <body>
     <CENTER>
-        <h1>Score Table</h1><br><br>
+        <h1><u>SCORE TABLE</u></h1><br><br>
 
         <table border="1" cellspacing="0" cellpadding="10" class="dcLeaderboard">
             <tr>
@@ -78,7 +95,7 @@ $s = $db->select($q2);
             <th colspan="3">Dancing Leaderboard</th>
         </tr>
         <tr>
-            <th>Team Id </th>
+            <th>Team Id</th>
             <th>School Name</th>
             <th>Total Score</th>
         </tr>
